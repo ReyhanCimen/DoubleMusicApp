@@ -1,0 +1,23 @@
+{
+  "name": "doublemusicapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReyhanCimen/DoubleMusicApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReyhanCimen/DoubleMusicApp/issues"
+  },
+  "homepage": "https://github.com/ReyhanCimen/DoubleMusicApp#readme",
+  "description": "",
+  "devDependencies": {
+    "electron": "^39.2.7"
+  }
+}
