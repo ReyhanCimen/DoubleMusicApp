@@ -1,0 +1,11 @@
+body { background:#d6cfcc; font-family: 'Segoe UI', sans-serif; }
+.window { margin:20px auto; width:640px; padding:10px; background:#bcb0ff; border-radius:10px; }
+.title { font-weight:bold; color:#fff; margin-bottom:10px; }
+.track { display:flex; gap:15px; padding:12px; background:#e6e0dd; border-radius:10px; margin-bottom:14px; }
+.cover { width:90px; height:90px; border-radius:6px; }
+.controls { flex:1; display:flex; flex-direction:column; gap:8px; }
+.row { display:flex; align-items:center; gap:10px; }
+input[type=range] { flex:1; accent-color:#d484ff; }
+.name { font-size:12px; opacity:.7; }
+button { border:none; padding:6px 10px; border-radius:6px; background:#c7a0ff; cursor:pointer; }
+button:hover { background:#b388ff; }

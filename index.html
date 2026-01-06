@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Music Slider</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="window">
+    <div class="title">Music Slider</div>
+
+    <div class="track">
+      <img src="cover1.png" class="cover" />
+      <div class="controls">
+        <div class="row">
+          <button id="play1">▶</button>
+          <input id="seek1" type="range" min="0" value="0" step="1" />
+          <span id="time1">00:00</span>
+        </div>
+
+        <div class="row">
+          <span>🔊</span>
+          <input id="vol1" type="range" min="0" max="100" value="80" />
+          <span id="v1val">80</span>
+        </div>
+
+        <div class="name">Minecraft</div>
+      </div>
+    </div>
+
+    <div class="track">
+      <img src="cover2.png" class="cover" />
+      <div class="controls">
+        <div class="row">
+          <button id="play2">▶</button>
+          <input id="seek2" type="range" min="0" value="0" step="1" />
+          <span id="time2">00:00</span>
+        </div>
+
+        <div class="row">
+          <span>🔊</span>
+          <input id="vol2" type="range" min="0" max="100" value="30" />
+          <span id="v2val">30</span>
+        </div>
+
+        <div class="name">Academic Brown Noise</div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="a1" src="minecraft.mp3"></audio>
+  <audio id="a2" src="AcademicBrown.mp3"></audio>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

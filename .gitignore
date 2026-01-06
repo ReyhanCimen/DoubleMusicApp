@@ -31,3 +31,6 @@ Thumbs.db
 # Cache
 .cache/
 .eslintcache
+
+# Media / Audio
+*.mp3
