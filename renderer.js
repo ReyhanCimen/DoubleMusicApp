@@ -1,6 +1,12 @@
 const a1 = document.getElementById("a1");
 const a2 = document.getElementById("a2");
 
+window.formatTime = (seconds) => {
+  const mins = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60);
+  return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+};
+
 function bindTrack(audio, playBtn, seek, time, vol, volText) {
   audio.addEventListener("loadedmetadata", () => {
     seek.max = Math.floor(audio.duration);
