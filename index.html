@@ -5,46 +5,62 @@
 <title>Music Slider</title>
 <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="window">
-    <div class="title">Music Slider</div>
 
-    <div class="track">
-      <img src="cover1.png" class="cover" />
-      <div class="controls">
-        <div class="row">
-          <button id="play1">▶</button>
-          <input id="seek1" type="range" min="0" value="0" step="1" />
-          <span id="time1">00:00</span>
-        </div>
+    <div class="titlebar">
+      <span class="titletext">Music Slider</span>
 
-        <div class="row">
-          <span>🔊</span>
-          <input id="vol1" type="range" min="0" max="100" value="80" />
-          <span id="v1val">80</span>
-        </div>
-
-        <div class="name">Minecraft</div>
+      <div class="window-buttons">
+        <div class="btn small"></div>
+        <div class="btn stack"></div>
+        <div class="btn close"></div>
       </div>
     </div>
 
-    <div class="track">
-      <img src="cover2.png" class="cover" />
-      <div class="controls">
-        <div class="row">
-          <button id="play2">▶</button>
-          <input id="seek2" type="range" min="0" value="0" step="1" />
-          <span id="time2">00:00</span>
-        </div>
+    <div class="content">
 
-        <div class="row">
-          <span>🔊</span>
-          <input id="vol2" type="range" min="0" max="100" value="30" />
-          <span id="v2val">30</span>
-        </div>
+      <div class="track">
+        <img src="cover1.png" class="cover" />
 
-        <div class="name">Academic Brown Noise</div>
+        <div class="controls">
+          <div class="row">
+            <button id="play1" class="playbtn">▶</button>
+            <input id="seek1" type="range" min="0" value="0" step="1" />
+            <span id="time1" class="time">00:00:00</span>
+          </div>
+
+          <div class="row">
+            <span class="icon">🔊</span>
+            <input id="vol1" type="range" min="0" max="100" value="80" />
+            <span id="v1val" class="val">80</span>
+          </div>
+
+          <div class="name">Minecraft</div>
+        </div>
       </div>
+
+      <div class="track">
+        <img src="cover2.png" class="cover" />
+
+        <div class="controls">
+          <div class="row">
+            <button id="play2" class="playbtn">▶</button>
+            <input id="seek2" type="range" min="0" value="0" step="1" />
+            <span id="time2" class="time">00:00:00</span>
+          </div>
+
+          <div class="row">
+            <span class="icon">🔊</span>
+            <input id="vol2" type="range" min="0" max="100" value="30" />
+            <span id="v2val" class="val">30</span>
+          </div>
+
+          <div class="name">Academic Brown Noise</div>
+        </div>
+      </div>
+
     </div>
   </div>
 

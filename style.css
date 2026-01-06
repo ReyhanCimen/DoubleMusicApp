@@ -1,11 +1,109 @@
-body { background:#d6cfcc; font-family: 'Segoe UI', sans-serif; }
-.window { margin:20px auto; width:640px; padding:10px; background:#bcb0ff; border-radius:10px; }
-.title { font-weight:bold; color:#fff; margin-bottom:10px; }
-.track { display:flex; gap:15px; padding:12px; background:#e6e0dd; border-radius:10px; margin-bottom:14px; }
-.cover { width:90px; height:90px; border-radius:6px; }
-.controls { flex:1; display:flex; flex-direction:column; gap:8px; }
-.row { display:flex; align-items:center; gap:10px; }
-input[type=range] { flex:1; accent-color:#d484ff; }
-.name { font-size:12px; opacity:.7; }
-button { border:none; padding:6px 10px; border-radius:6px; background:#c7a0ff; cursor:pointer; }
-button:hover { background:#b388ff; }
+body {
+  background:#d6cfcc;
+  font-family: 'Segoe UI', sans-serif;
+  margin:0;
+}
+
+/* Outer window */
+.window {
+  width:680px;
+  margin:18px auto;
+  border-radius:14px;
+  background:#b7a8ff;
+  box-shadow:0 0 0 3px #6c63c9;
+}
+
+/* Top bar */
+.titlebar {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:8px 12px;
+  color:#ffffff;
+  font-weight:700;
+}
+
+.titletext {
+  letter-spacing:0.5px;
+}
+
+/* Buttons on top right */
+.window-buttons {
+  display:flex;
+  gap:6px;
+}
+
+.btn {
+  width:18px;
+  height:18px;
+  border-radius:4px;
+  background:#eaddff;
+}
+
+.btn.stack { background:#cfd5ff; }
+.btn.close { background:#ffb3b3; }
+
+/* Inner content */
+.content {
+  background:#d6d0cc;
+  border-radius:0 0 14px 14px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+}
+
+/* Track block */
+.track {
+  display:flex;
+  gap:14px;
+  padding:12px;
+  background:#e6e0dd;
+  border-radius:12px;
+}
+
+.cover {
+  width:88px;
+  height:88px;
+  border-radius:8px;
+}
+
+/* Controls */
+.controls {
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.row {
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+input[type=range] {
+  flex:1;
+  accent-color:#d984ff;
+}
+
+.playbtn {
+  border:none;
+  border-radius:10px;
+  background:#cda9ff;
+  padding:6px 10px;
+  cursor:pointer;
+}
+
+.playbtn:hover { background:#b48bff; }
+
+.name {
+  font-size:12px;
+  opacity:.7;
+}
+
+.time, .val {
+  font-weight:600;
+}
+
+.icon { font-size:16px; }
